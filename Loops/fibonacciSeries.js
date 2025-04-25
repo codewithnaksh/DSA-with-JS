@@ -36,3 +36,26 @@ function fibonacciSeries(terms) {
 
 // Call the function to generate and display the Fibonacci series
 fibonacciSeries(noOfTerms);
+
+
+// -----------------------------------------------------------------------------------------------
+
+// Sum of even indexed Fibonacci numbers : N = 4 : Output = 33
+
+let N = 4;
+
+function evenIndexedSum(N) {
+    let sum = 0;
+    let first = 0; //0th index
+    let second = 1; //1st index
+    for (let i=2; i<=N*2;i++){
+        // looping from 2nd index upto Nx2th index
+        second = first + second;
+        first = second - first;
+        if (i%2==0) {
+            sum+= second;
+        }
+    }
+    console.log(`Sum of Fibonacci numbers at even indices upto ${2*N}(Nx2) : ${sum}✅`);
+}
+evenIndexedSum(N);
