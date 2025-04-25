@@ -2,7 +2,7 @@ let a = 105,
   b = 36; // Define two numbers to calculate their HCF
 
 // Function to calculate the HCF (Highest Common Factor) using Euclid's algorithm
-function hcf(x, y) {
+export function hcf(x, y) {
   // Ensure x is the larger number
   if (x < y) {
     [x, y] = [y, x]; // Swap x and y if x is smaller
