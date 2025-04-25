@@ -2,7 +2,7 @@
 let num = 15;
 
 // Function to check if a number is prime
-function isPrime(n) {
+export function isPrime(n) {
   // A prime number is greater than 1 and divisible only by 1 and itself
   for (let i = 2; i < n; i++) {
     if (n % i == 0) {
